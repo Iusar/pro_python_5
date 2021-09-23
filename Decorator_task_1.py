@@ -13,7 +13,7 @@ def decorator(foo):
         with open('log_file.txt', 'a') as log:
             log.write(
                 f'дата - {date}, время - {time}, функция - {foo.__name__}, результат {result}, args - {args}, kwargs - {kwargs})\n')
-
+        return result
     return wrap
 
 

@@ -19,6 +19,7 @@ def param_decorator(target_directory):
                 log.write(
                     f'дата - {date}, время - {time}, функция - {foo.__name__}, результат {result}, args - {args}, kwargs - {kwargs})\n')
 
+            return result
         return wrap
 
     return decorator
